@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#FBF3E9" />
+
+    <title>HIBBA IS 19 — A Playful Digital Birthday Universe</title>
+    <meta
+      name="description"
+      content="The world is currently celebrating Hibba. Nineteen years of oversized typography, glossy 3D sculptures, one very important cat and a cake that refuses to sit still."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Hibba is 19" />
+    <meta property="og:title" content="HIBBA IS 19 — A Playful Digital Birthday Universe" />
+    <meta
+      property="og:description"
+      content="A birthday universe of glossy 3D sculptures, oversized type, a very important cat and a rather serious amount of cake."
+    />
+    <meta property="og:image" content="/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="HIBBA 19 — cream, pink and cherry-red 3D birthday artwork" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="HIBBA IS 19 — A Playful Digital Birthday Universe" />
+    <meta
+      name="twitter:description"
+      content="A birthday universe of glossy 3D sculptures, oversized type, a very important cat and a rather serious amount of cake."
+    />
+    <meta name="twitter:image" content="/og.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=Caveat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html { background: #fbf3e9; }
+      body { margin: 0; }
+      #root { min-height: 100vh; }
+      .boot {
+        position: fixed;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        background: #fbf3e9;
+        color: #c2113a;
+        font: 500 12px/1 'Space Grotesk', system-ui, sans-serif;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        z-index: 999;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"><div class="boot">Hibba is turning 19</div></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // If the app never mounts (module blocked, server gone), do not leave the
+      // boot line sitting there forever with no explanation.
+      window.setTimeout(function () {
+        var boot = document.querySelector('.boot')
+        if (!boot) return
+        boot.innerHTML =
+          '<span>This page could not start. Reload once the local server is running.</span>' +
+          '<button type="button" style="margin-top:16px;padding:10px 22px;border-radius:999px;border:1px solid #c2113a;background:#c2113a;color:#fffaf3;font:500 10px/1 system-ui,sans-serif;letter-spacing:.18em;text-transform:uppercase;cursor:pointer" onclick="location.reload()">Reload</button>'
+        boot.style.flexDirection = 'column'
+        boot.style.textAlign = 'center'
+        boot.style.padding = '24px'
+      }, 8000)
+    </script>
+  </body>
+</html>

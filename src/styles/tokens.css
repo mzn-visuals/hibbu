@@ -1,0 +1,40 @@
+:root {
+  /* colour system */
+  --cream: #fbf3e9;
+  --cream-2: #f4e6d7;
+  --cream-3: #efe0cf;
+  --paper: #fffaf3;
+  --pink: #ff6e9c;
+  --pink-hot: #ef4c86;
+  --pink-soft: #ffc3d6;
+  --blush: #fbd3e1;
+  --rose: #d98ca3;
+  --peach: #ffd8c2;
+  --red: #c2113a;
+  --red-soft: #e22f4f;
+  --wine: #5a1027;
+  --burgundy: #3b0b1b;
+  --ink: #2c1119;
+  --ink-soft: #7a5260;
+  --line: rgba(44, 17, 25, 0.16);
+  --line-soft: rgba(44, 17, 25, 0.08);
+  --line-light: rgba(251, 243, 233, 0.22);
+
+  /* type */
+  --serif: 'Instrument Serif', 'Iowan Old Style', Georgia, serif;
+  --sans: 'Space Grotesk', 'Segoe UI', system-ui, sans-serif;
+  --body: 'DM Sans', 'Segoe UI', system-ui, sans-serif;
+  --hand: 'Caveat', 'Segoe Script', cursive;
+
+  /* space + shape */
+  --gutter: clamp(18px, 4.4vw, 64px);
+  --maxw: 1460px;
+  --r-xl: 40px;
+  --r-lg: 28px;
+  --r-md: 18px;
+  --r-sm: 10px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.16, 0.84, 0.44, 1);
+  --shadow-soft: 0 34px 70px -42px rgba(90, 16, 39, 0.45);
+  --shadow-card: 0 18px 40px -28px rgba(90, 16, 39, 0.4);
+}
